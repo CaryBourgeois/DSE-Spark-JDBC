@@ -84,9 +84,9 @@ Now, query the table we created to make sure we have gotten this far without iss
 
 Next we need to create a user and grant that user the necessary access to work with the data. WARNING: This step exposes your system to outside access. If you are worried about this you need to investigate MySQL security and approach this from a more secure perspective.
 
-          CREATE USER 'dseuser'@'localhost' IDENTIFIED BY 'datastax';
+          CREATE USER 'dseuser'@'%' IDENTIFIED BY 'datastax';
 
-          GRANT ALL PRIVILEGES ON *.* TO 'dseuser'@'localhost' IDENTIFIED BY 'datastax';
+          GRANT ALL PRIVILEGES ON *.* TO 'dseuser'@'%' IDENTIFIED BY 'datastax';
 
 Finally, quit the MySQL command line `musql>QUIT` and login again as the user we just created.
 
