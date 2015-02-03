@@ -88,7 +88,7 @@ Next we need to create a user and grant that user the necessary access to work w
 
           GRANT ALL PRIVILEGES ON *.* TO 'dseuser'@'%' IDENTIFIED BY 'datastax';
 
-Finally, quit the MySQL command line `musql>QUIT` and login again as the user we just created.
+Finally, quit the MySQL command line `mysql>QUIT` and login again as the user we just created.
 
           mysql --user=dseuser --password=datastax
 
