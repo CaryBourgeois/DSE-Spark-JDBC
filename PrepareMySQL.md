@@ -44,7 +44,7 @@ Once at the `mysql>` prompt you can issue the following commands to prepare the 
                PRIMARY KEY (id)
           );                              # Create the table we will use
 
-          SHOW TABLES IN test;            # Validate that the table was created
+          SHOW TABLES IN spark_cass_test;            # Validate that the table was created
 
 The following command will insert the data that we will use in our examples. The command will create 150 records which will be important to our partitioned RDD.
 
